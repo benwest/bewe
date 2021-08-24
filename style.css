@@ -1,91 +1,241 @@
 * {
-    cursor: none !important;
-    box-sizing: border-box;
-    -webkit-tap-highlight-color: transparent;
-    -webkit-font-smoothing: antialiased;
+  cursor: none !important;
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-font-smoothing: antialiased;
+  margin: 0;
+  padding: 0;
 }
 
 html {
-    height: 100%;
-    font-family: -apple-system, system-ui, sans-serif;
-    font-size: 15px;
-    line-height: 1.333;
+  height: 100%;
+  font-family: -apple-system, system-ui, sans-serif;
+  font-size: 15px;
+  line-height: 1.333;
+  font-weight: 400;
 }
 
 body {
-    height: 100%;
-    overflow: hidden;
-    margin: 0;
+  overflow: hidden;
+  margin: 0;
 }
 
 .touch body {
-	overflow-y: scroll;
+  overflow-y: scroll;
 }
 
-ul {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    margin: 0;
-    padding: .5em;
-    list-style: none;
-    opacity: 0;
-    transition: opacity .5s;
+a,
+a:visited {
+  text-decoration: none;
+  color: inherit;
 }
 
-li {
-    margin-bottom: 1em;
-}
-
-a, a:visited {
-    color: inherit;
-    text-decoration: none;
-}
-
-.cursor {
-    position: fixed;
-    pointer-events: none;
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    width: 16px;
-    height: 22px;
-    margin-top: -2px;
-    margin-left: -2.5px;
-    background-image: url('./cursor.png');
-    background-size: 100% 100%;
-    z-index: 1000;
-}
-
-.cursor.pointer {
-    background-image: url('./pointer.png');
-    width: 16px;
-    height: 18px;
-    margin-top: -1px;
-    margin-left: -4.6px;
-}
-
-.link {
-    position: fixed;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    display: block;
-    z-index: 200;
+a:visited {
+  color: black;
 }
 
 a.blue {
-    color: blue;
+  color: blue;
 }
 
-.touch ul {
-	position: static;
-	padding: 1em;
+.cursor {
+  position: fixed;
+  pointer-events: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 16px;
+  height: 22px;
+  margin-top: -2px;
+  margin-left: -2.5px;
+  background-image: url("./cursor.png");
+  background-size: 100% 100%;
+  z-index: 1000;
+}
+
+.cursor.pointer {
+  background-image: url("./pointer.png");
+  width: 16px;
+  height: 18px;
+  margin-top: -1px;
+  margin-left: -4.6px;
+}
+
+.link {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+  z-index: 200;
 }
 
 .touch .cursor,
 .touch .link {
-	display: none;
+  display: none;
 }
+
+main {
+  position: fixed;
+}
+
+.touch main {
+  position: static;
+  padding: 0.75em;
+}
+
+.list > *:not(:last-child) {
+  margin-bottom: 1.5em;
+}
+
+.list__projects > *:not(:last-child) {
+  margin-bottom: 1em;
+}
+
+.table {
+  grid-template-columns: auto auto;
+  row-gap: 0.75em;
+  column-gap: 0.75em;
+  display: none;
+}
+
+.table__header,
+.table__footer {
+  grid-column-end: span 2;
+}
+
+.table__project-title {
+  grid-column-start: 1;
+}
+
+.table__header {
+  margin-bottom: 0.75em;
+}
+
+.table__footer {
+  margin-top: 0.75em;
+}
+
+@media (min-width: 350px) {
+  .list {
+    display: none;
+  }
+  .table {
+    display: inline-grid;
+  }
+}
+
+/*
+table {
+  border-spacing: 0;
+}
+
+thead td {
+  padding-bottom: 1.5em;
+}
+
+tr:not(:last-of-type) td {
+  padding-bottom: 0.75em;
+}
+
+tfoot td {
+  padding-top: 1.5em;
+}
+
+
+
+@media (max-width: 768px) {
+  tr {
+    display: block;
+  }
+  td {
+    display: block;
+    margin-bottom: 0;
+  }
+} */
+/* 
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.page {
+  position: fixed;
+  top: 0;
+  left: 0;
+  transition: opacity 0.5s;
+}
+
+.page li {
+  margin-bottom: 1.5em;
+}
+
+.projects li {
+  margin-bottom: 0.75em;
+  display: flex;
+}
+
+a,
+a:visited {
+  color: inherit;
+  text-decoration: none;
+}
+
+.cursor {
+  position: fixed;
+  pointer-events: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 16px;
+  height: 22px;
+  margin-top: -2px;
+  margin-left: -2.5px;
+  background-image: url("./cursor.png");
+  background-size: 100% 100%;
+  z-index: 1000;
+}
+
+.cursor.pointer {
+  background-image: url("./pointer.png");
+  width: 16px;
+  height: 18px;
+  margin-top: -1px;
+  margin-left: -4.6px;
+}
+
+.link {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+  z-index: 200;
+}
+
+a.blue {
+  color: blue;
+}
+
+.touch .page {
+  position: static;
+  padding: 1em;
+}
+
+.touch .cursor,
+.touch .link {
+  display: none;
+}
+
+.credit {
+  font-weight: 0.75em;
+}
+
+.project {
+  font-weight: 600;
+  width: 15em;
+  display: block;
+} */
