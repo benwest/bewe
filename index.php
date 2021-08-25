@@ -179,44 +179,6 @@ $projects = [
     </div>
   </main>
 
-  <!-- <table class="main">
-    <thead>
-      <td>
-        Ben West<br />
-        Graphic design + programming<br />
-        Amsterdam
-      </td>
-      <td></td>
-    </thead>
-    <?php foreach ($projects as $project) : ?>
-      <tr>
-        <td>
-          <a class="blue project" href="<?= $project["url"] ?>" target="_blank" rel="noopener noreferrer">
-            <?= $project["title"] ?>
-          </a>
-        </td>
-        <td>
-          <?php if ($credit = $project["credit"] ?? null) : ?><span class="credit"> with
-              <a href="<?= $credit["url"] ?>" target="_blank" rel="noopener noreferrer">
-                <?= $credit["title"] ?>
-              </a>
-            </span>
-          <?php endif ?>
-        </td>
-      </tr>
-    <?php endforeach ?>
-    <tfoot>
-      <td>
-        <a class="blue" href="mailto:ben@bewe.me">ben@bewe.me</a><br />
-        <a class="blue" href="https://twitter.com/be_we_me" target="_blank">twitter</a>,
-        <a class="blue" href="https://instagram.com/beweme" target="_blank">instagram</a>,
-        <a class="blue" href="http://beweme.tumblr.com/" target="_blank">tumblr</a>,
-        <a class="blue" href="https://are.na/ben-west" target="_blank">are.na</a>
-      </td>
-      <td></td>
-    </tfoot>
-  </table> -->
-
   <script src="https://cdn.polyfill.io/v2/polyfill.min.js"></script>
   <script type="text/javascript" src="./script.js"></script>
 </body>
