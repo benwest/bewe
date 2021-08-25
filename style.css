@@ -78,6 +78,7 @@ a.blue {
 
 main {
   position: fixed;
+  transition: opacity 0.2s;
 }
 
 .touch main {
