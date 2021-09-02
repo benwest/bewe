@@ -79,7 +79,7 @@ $projects = [
     ]
   ],
   [
-    "url" => "http://hand.bong.international/",
+    "url" => "http://hand.bewe.me/",
     "title" => "hand.gallery",
     "credit" => [
       "url" => "https://simonsweeney.me/",
