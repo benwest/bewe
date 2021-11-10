@@ -15,6 +15,18 @@ Amsterdam
 <?php
 $projects = [
   [
+    "url" => "https://www.petertalisman.quest/",
+    "title" => "petertalisman.quest",
+    "credit" => [
+      "url" => "https://josephpleass.com/",
+      "title" => "Joseph Pleass"
+    ]
+  ],
+  [
+    "url" => "https://johwska.com/",
+    "title" => "johwska.com"
+  ],
+  [
     "url" => "https://www.slackcity.org.uk/",
     "title" => "slackcity.org.uk"
   ],
