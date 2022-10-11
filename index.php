@@ -35,24 +35,12 @@ $projects = [
     "title" => "schemasofuncertainty.com"
   ],
   [
-    "url" => "http://studiopms.nl/",
-    "title" => "studiopms.nl"
-  ],
-  [
     "url" => "http://justanideafilm.com/",
     "title" => "justanideafilm.com"
   ],
   [
     "url" => "http://lynnecarty.info/",
     "title" => "lynnecarty.info",
-    "credit" => [
-      "url" => "https://simonsweeney.me/",
-      "title" => "Simon Sweeney"
-    ]
-  ],
-  [
-    "url" => "https://trippin.world/",
-    "title" => "trippin.world",
     "credit" => [
       "url" => "https://simonsweeney.me/",
       "title" => "Simon Sweeney"
@@ -79,7 +67,7 @@ $projects = [
     ]
   ],
   [
-    "url" => "http://a-friend-is-writing.new-document.net/",
+    "url" => "http://a-friend-is-writing.bewe.me/",
     "title" => "A Friend is Writing",
     "credit" => [
       "url" => "https://simonsweeney.me/",
