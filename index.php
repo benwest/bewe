@@ -15,6 +15,10 @@ Amsterdam
 <?php
 $projects = [
   [
+    "url" => "https://softearth.org/",
+    "title" => "soft earth"
+  ],
+  [
     "url" => "https://www.petertalisman.quest/",
     "title" => "petertalisman.quest",
     "credit" => [
@@ -46,14 +50,14 @@ $projects = [
       "title" => "Simon Sweeney"
     ]
   ],
-  [
-    "url" => "http://kuedo.co.uk/",
-    "title" => "kuedo.co.uk",
-    "credit" => [
-      "url" => "https://simonsweeney.me/",
-      "title" => "Simon Sweeney"
-    ]
-  ],
+  // [
+  //   "url" => "http://kuedo.co.uk/",
+  //   "title" => "kuedo.co.uk",
+  //   "credit" => [
+  //     "url" => "https://simonsweeney.me/",
+  //     "title" => "Simon Sweeney"
+  //   ]
+  // ],
   [
     "url" => "http://callumcopley.com/",
     "title" => "callumcopley.com"
@@ -99,7 +103,7 @@ $projects = [
     ]
   ],
 ]
-?>
+  ?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -142,15 +146,15 @@ $projects = [
         <?= $header ?>
       </div>
       <div class="list__projects">
-        <?php foreach ($projects as $project) : ?>
-          <div class="list__project">
-            <a class="blue" href="<?= $project["url"] ?>" target="_blank" rel="noopener noreferrer">
-              <?= $project["title"] ?></a><?php if ($credit = $project["credit"] ?? null) : ?>, with
-            <a href="<?= $credit["url"] ?>" target="_blank" rel="noopener noreferrer">
-              <?= $credit["title"] ?>
-            </a>
-          <?php endif ?>
-          </div>
+        <?php foreach ($projects as $project): ?>
+                  <div class="list__project">
+                    <a class="blue" href="<?= $project["url"] ?>" target="_blank" rel="noopener noreferrer">
+                      <?= $project["title"] ?></a><?php if ($credit = $project["credit"] ?? null): ?>, with
+                            <a href="<?= $credit["url"] ?>" target="_blank" rel="noopener noreferrer">
+                              <?= $credit["title"] ?>
+                            </a>
+                  <?php endif ?>
+                  </div>
         <?php endforeach ?>
       </div>
       <div class="list__footer">
@@ -162,20 +166,20 @@ $projects = [
       <div class="table__header">
         <?= $header ?>
       </div>
-      <?php foreach ($projects as $project) : ?>
-        <div class="table__project-title">
-          <a class="blue" href="<?= $project["url"] ?>" target="_blank" rel="noopener noreferrer">
-            <?= $project["title"] ?>
-          </a>
-        </div>
-        <div class="table__project-credit">
-          <?php if ($credit = $project["credit"] ?? null) : ?>
-            with
-            <a href="<?= $credit["url"] ?>" target="_blank" rel="noopener noreferrer">
-              <?= $credit["title"] ?>
-            </a>
-          <?php endif ?>
-        </div>
+      <?php foreach ($projects as $project): ?>
+                <div class="table__project-title">
+                  <a class="blue" href="<?= $project["url"] ?>" target="_blank" rel="noopener noreferrer">
+                    <?= $project["title"] ?>
+                  </a>
+                </div>
+                <div class="table__project-credit">
+                  <?php if ($credit = $project["credit"] ?? null): ?>
+                            with
+                            <a href="<?= $credit["url"] ?>" target="_blank" rel="noopener noreferrer">
+                              <?= $credit["title"] ?>
+                            </a>
+                  <?php endif ?>
+                </div>
       <?php endforeach ?>
       <div class="table__footer">
         <?= $footer ?>
