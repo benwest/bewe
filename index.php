@@ -20,10 +20,14 @@ $projects = [
   ],
   [
     "url" => "https://www.petertalisman.quest/",
+    "title" => "jameszoo.com"
+  ],
+  [
+    "url" => "https://www.petertalisman.quest/",
     "title" => "petertalisman.quest",
     "credit" => [
-      "url" => "https://josephpleass.com/",
-      "title" => "Joseph Pleass"
+      "url" => "https://softearth.org/",
+      "title" => "soft earth"
     ]
   ],
   [
@@ -50,14 +54,6 @@ $projects = [
       "title" => "Simon Sweeney"
     ]
   ],
-  // [
-  //   "url" => "http://kuedo.co.uk/",
-  //   "title" => "kuedo.co.uk",
-  //   "credit" => [
-  //     "url" => "https://simonsweeney.me/",
-  //     "title" => "Simon Sweeney"
-  //   ]
-  // ],
   [
     "url" => "http://callumcopley.com/",
     "title" => "callumcopley.com"
@@ -73,14 +69,6 @@ $projects = [
   [
     "url" => "http://a-friend-is-writing.bewe.me/",
     "title" => "A Friend is Writing",
-    "credit" => [
-      "url" => "https://simonsweeney.me/",
-      "title" => "Simon Sweeney"
-    ]
-  ],
-  [
-    "url" => "http://isabelandhelen.com/",
-    "title" => "isabelandhelen.com",
     "credit" => [
       "url" => "https://simonsweeney.me/",
       "title" => "Simon Sweeney"
