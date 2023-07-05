@@ -19,7 +19,7 @@ $projects = [
     "title" => "soft earth"
   ],
   [
-    "url" => "https://www.petertalisman.quest/",
+    "url" => "https://jameszoo.com/",
     "title" => "jameszoo.com"
   ],
   [
