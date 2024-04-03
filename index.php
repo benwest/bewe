@@ -6,7 +6,6 @@ Amsterdam
 
 <?php ob_start() ?>
 <a class="blue" href="mailto:ben@bewe.me">ben@bewe.me</a><br />
-<a class="blue" href="https://twitter.com/be_we_me" target="_blank">twitter</a>,
 <a class="blue" href="https://instagram.com/beweme" target="_blank">instagram</a>,
 <a class="blue" href="http://beweme.tumblr.com/" target="_blank">tumblr</a>,
 <a class="blue" href="https://are.na/ben-west" target="_blank">are.na</a>
@@ -155,19 +154,19 @@ $projects = [
         <?= $header ?>
       </div>
       <?php foreach ($projects as $project): ?>
-                <div class="table__project-title">
-                  <a class="blue" href="<?= $project["url"] ?>" target="_blank" rel="noopener noreferrer">
-                    <?= $project["title"] ?>
-                  </a>
-                </div>
-                <div class="table__project-credit">
-                  <?php if ($credit = $project["credit"] ?? null): ?>
-                            with
-                            <a href="<?= $credit["url"] ?>" target="_blank" rel="noopener noreferrer">
-                              <?= $credit["title"] ?>
-                            </a>
-                  <?php endif ?>
-                </div>
+        <div class="table__project-title">
+          <a class="blue" href="<?= $project["url"] ?>" target="_blank" rel="noopener noreferrer">
+            <?= $project["title"] ?>
+          </a>
+        </div>
+        <div class="table__project-credit">
+          <?php if ($credit = $project["credit"] ?? null): ?>
+            with
+            <a href="<?= $credit["url"] ?>" target="_blank" rel="noopener noreferrer">
+              <?= $credit["title"] ?>
+            </a>
+          <?php endif ?>
+        </div>
       <?php endforeach ?>
       <div class="table__footer">
         <?= $footer ?>
