@@ -14,83 +14,99 @@ Amsterdam
 <?php
 $projects = [
   [
-    "url" => "https://softearth.org/",
-    "title" => "soft earth"
-  ],
-  [
-    "url" => "https://jameszoo.com/",
-    "title" => "jameszoo.com"
-  ],
-  [
-    "url" => "https://www.petertalisman.quest/",
-    "title" => "petertalisman.quest",
-    "credit" => [
-      "url" => "https://softearth.org/",
-      "title" => "soft earth"
+    'url' => 'https://www.jbe-books.com/products/google-volume-2-by-felix-heyes-ben-west',
+    'title' => 'Google, Vol. 2',
+    'credit' => [
+      'url' => 'http://felixheyes.com',
+      'title' => 'Felix Heyes'
     ]
   ],
   [
-    "url" => "https://johwska.com/",
-    "title" => "johwska.com"
+    'url' => 'https://softearth.org/',
+    'title' => 'soft earth'
   ],
   [
-    "url" => "https://www.slackcity.org.uk/",
-    "title" => "slackcity.org.uk"
+    'url' => 'https://jameszoo.com/',
+    'title' => 'jameszoo.com'
   ],
   [
-    "url" => "http://schemasofuncertainty.com/",
-    "title" => "schemasofuncertainty.com"
-  ],
-  [
-    "url" => "http://justanideafilm.com/",
-    "title" => "justanideafilm.com"
-  ],
-  [
-    "url" => "http://lynnecarty.info/",
-    "title" => "lynnecarty.info",
-    "credit" => [
-      "url" => "https://simonsweeney.me/",
-      "title" => "Simon Sweeney"
+    'url' => 'https://the-most-beautiful-song-in-the-world.com/',
+    'title' => 'the-most-beautiful-song<br/>-in-the-world.com',
+    'credit' => [
+      'url' => 'https://josephpleass.com/',
+      'title' => 'Joseph Pleass'
     ]
   ],
   [
-    "url" => "http://callumcopley.com/",
-    "title" => "callumcopley.com"
-  ],
-  [
-    "url" => "https://www.bo-en.info/",
-    "title" => "bo-en.info",
-    "credit" => [
-      "url" => "https://simonsweeney.me/",
-      "title" => "Simon Sweeney"
+    'url' => 'https://www.petertalisman.quest/',
+    'title' => 'petertalisman.quest',
+    'credit' => [
+      'url' => 'https://softearth.org/',
+      'title' => 'soft earth'
     ]
   ],
   [
-    "url" => "http://a-friend-is-writing.bewe.me/",
-    "title" => "A Friend is Writing",
-    "credit" => [
-      "url" => "https://simonsweeney.me/",
-      "title" => "Simon Sweeney"
+    'url' => 'https://johwska.com/',
+    'title' => 'johwska.com'
+  ],
+  [
+    'url' => 'https://www.slackcity.org.uk/',
+    'title' => 'slackcity.org.uk'
+  ],
+  [
+    'url' => 'http://schemasofuncertainty.com/',
+    'title' => 'schemasofuncertainty.com'
+  ],
+  [
+    'url' => 'http://justanideafilm.com/',
+    'title' => 'justanideafilm.com'
+  ],
+  [
+    'url' => 'http://lynnecarty.info/',
+    'title' => 'lynnecarty.info',
+    'credit' => [
+      'url' => 'https://simonsweeney.me/',
+      'title' => 'Simon Sweeney'
     ]
   ],
   [
-    "url" => "http://hand.bewe.me/",
-    "title" => "hand.gallery",
-    "credit" => [
-      "url" => "https://simonsweeney.me/",
-      "title" => "Simon Sweeney"
+    'url' => 'http://callumcopley.com/',
+    'title' => 'callumcopley.com'
+  ],
+  [
+    'url' => 'https://www.bo-en.info/',
+    'title' => 'bo-en.info',
+    'credit' => [
+      'url' => 'https://simonsweeney.me/',
+      'title' => 'Simon Sweeney'
     ]
   ],
   [
-    "url" => "https://www.jbe-books.com/products/google-volume-1-by-king-zog",
-    "title" => "Google, Vol. 1",
-    "credit" => [
-      "url" => "http://felixheyes.com",
-      "title" => "Felix Heyes"
+    'url' => 'http://a-friend-is-writing.bewe.me/',
+    'title' => 'A Friend is Writing',
+    'credit' => [
+      'url' => 'https://simonsweeney.me/',
+      'title' => 'Simon Sweeney'
+    ]
+  ],
+  [
+    'url' => 'http://hand.bewe.me/',
+    'title' => 'hand.gallery',
+    'credit' => [
+      'url' => 'https://simonsweeney.me/',
+      'title' => 'Simon Sweeney'
+    ]
+  ],
+  [
+    'url' => 'https://www.jbe-books.com/products/google-volume-1-by-king-zog',
+    'title' => 'Google, Vol. 1',
+    'credit' => [
+      'url' => 'http://felixheyes.com',
+      'title' => 'Felix Heyes'
     ]
   ],
 ]
-  ?>
+?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -135,10 +151,10 @@ $projects = [
       <div class="list__projects">
         <?php foreach ($projects as $project): ?>
                   <div class="list__project">
-                    <a class="blue" href="<?= $project["url"] ?>" target="_blank" rel="noopener noreferrer">
-                      <?= $project["title"] ?></a><?php if ($credit = $project["credit"] ?? null): ?>, with
-                            <a href="<?= $credit["url"] ?>" target="_blank" rel="noopener noreferrer">
-                              <?= $credit["title"] ?>
+                    <a class="blue" href="<?= $project['url'] ?>" target="_blank" rel="noopener noreferrer">
+                      <?= $project['title'] ?></a><?php if ($credit = $project['credit'] ?? null): ?>, with
+                            <a href="<?= $credit['url'] ?>" target="_blank" rel="noopener noreferrer">
+                              <?= $credit['title'] ?>
                             </a>
                   <?php endif ?>
                   </div>
@@ -155,15 +171,15 @@ $projects = [
       </div>
       <?php foreach ($projects as $project): ?>
         <div class="table__project-title">
-          <a class="blue" href="<?= $project["url"] ?>" target="_blank" rel="noopener noreferrer">
-            <?= $project["title"] ?>
+          <a class="blue" href="<?= $project['url'] ?>" target="_blank" rel="noopener noreferrer">
+            <?= $project['title'] ?>
           </a>
         </div>
         <div class="table__project-credit">
-          <?php if ($credit = $project["credit"] ?? null): ?>
+          <?php if ($credit = $project['credit'] ?? null): ?>
             with
-            <a href="<?= $credit["url"] ?>" target="_blank" rel="noopener noreferrer">
-              <?= $credit["title"] ?>
+            <a href="<?= $credit['url'] ?>" target="_blank" rel="noopener noreferrer">
+              <?= $credit['title'] ?>
             </a>
           <?php endif ?>
         </div>
