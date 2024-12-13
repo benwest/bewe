@@ -30,6 +30,10 @@ $projects = [
     'title' => 'jameszoo.com'
   ],
   [
+    'url' => 'https://vetrabikes.com/',
+    'title' => 'vetrabikes.com'
+  ],
+  [
     'url' => 'https://the-most-beautiful-song-in-the-world.com/',
     'title' => 'the-most-beautiful-song<br/>-in-the-world.com',
     'credit' => [
