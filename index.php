@@ -65,14 +65,14 @@ $projects = [
     'url' => 'http://justanideafilm.com/',
     'title' => 'justanideafilm.com'
   ],
-  [
-    'url' => 'http://lynnecarty.info/',
-    'title' => 'lynnecarty.info',
-    'credit' => [
-      'url' => 'https://simonsweeney.me/',
-      'title' => 'Simon Sweeney'
-    ]
-  ],
+  // [
+  //   'url' => 'http://lynnecarty.info/',
+  //   'title' => 'lynnecarty.info',
+  //   'credit' => [
+  //     'url' => 'https://simonsweeney.me/',
+  //     'title' => 'Simon Sweeney'
+  //   ]
+  // ],
   [
     'url' => 'http://callumcopley.com/',
     'title' => 'callumcopley.com'
